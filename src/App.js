@@ -33,7 +33,7 @@ function App() {
   const [computerSelect,setComputerSelect] = useState(null)
   const [result,setResult] = useState("")
 
-  // 유저 아이템 선택 시작
+  // 유저 아이템 선택 
   const play = (userChoice) => {
     // 사용자, 컴퓨터 선택 기능 구현
     setUserSelect(choice[userChoice]); 
@@ -59,14 +59,14 @@ function App() {
     if(user.name === computer.name) {
       return "Tie"
     }else if(user.name === "Rock") 
-      return computer.name === "Scissors"? "Win" : "Lose";
+      return computer.name === "Scissors" ? "Win" : "Lose";
     else if(user.name === "Scissors")
-       return computer.name === "Paper"? "Win" : "Lose";
+       return computer.name === "Paper" ? "Win" : "Lose";
     else if(user.name === "Paper") 
-      return computer.name === "Rock"? "Win" : "Lose";
+      return computer.name === "Rock" ? "Win" : "Lose";
   };
 
-  // 컴퓨터 아이템 선택 시작
+  // 컴퓨터 아이템 선택 
   const randomChoice = () => {
     let itemArray = Object.keys(choice);//객체에 키값만 뽑아서 어레이로 만들어주는 함수
     console.log("item array",itemArray);
