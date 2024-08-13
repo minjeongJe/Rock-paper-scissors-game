@@ -99,6 +99,21 @@ button {
   }
 }
 
+.Win {
+  border: 2px solid green;
+  color: green;
+}
+
+.Lose {
+  border: 2px solid red;
+  color: red;
+}
+
+.Tie {
+  border: 2px solid black;
+  color: black;
+}
+
 .icon {
   color: rgb(69, 8, 211);
   font-size: 25px;
@@ -138,7 +153,6 @@ button {
     }
 
     .box h1 {
-      font-weight: 400;
       font-size: 25px;
     }
 
