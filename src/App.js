@@ -38,7 +38,7 @@ function App() {
     // 사용자, 컴퓨터 선택 기능 구현
     setUserSelect(choice[userChoice]); 
     // console.log("선택됨.",userChoice;);
-    let computerChoice = randomChoice()
+    const computerChoice = randomChoice()
     setComputerSelect(computerChoice);
     // judgement(choice[userChoice], computerChoice)
     setResult(judgement(choice[userChoice], computerChoice));
@@ -68,11 +68,11 @@ function App() {
 
   // 컴퓨터 아이템 선택 
   const randomChoice = () => {
-    let itemArray = Object.keys(choice);//객체에 키값만 뽑아서 어레이로 만들어주는 함수
+    const itemArray = Object.keys(choice);//객체에 키값만 뽑아서 어레이로 만들어주는 함수
     console.log("item array",itemArray);
-    let randomItem = Math.floor(Math.random() * itemArray.length);
+    const randomItem = Math.floor(Math.random() * itemArray.length);
     console.log("random value",randomItem);
-    let final = itemArray[randomItem];
+    const final = itemArray[randomItem];
     console.log("final",final);
     return choice[final];
   } 
