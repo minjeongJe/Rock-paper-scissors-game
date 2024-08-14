@@ -8,9 +8,9 @@ const Box = (props) => {
     props.title === "Computer" && 
     props.result !== "Tie" && 
     props.result !== "") {
-        result = props.result === "Win" ? "Lose" : "Win"; 
+      result = props.result === "Win" ? "Lose" : "Win"; 
     }else {
-        result = props.result;
+      result = props.result;
     }
 
   return ( 

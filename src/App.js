@@ -14,7 +14,7 @@ import { faHandBackFist, faHandScissors, faHand} from '@fortawesome/free-regular
 
 const choice = {
   rock: {
-    name:"Rock",
+    name:"Rock",  
     img:"data:image/jpeg;base64,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",
   },
   scissors:{
@@ -29,20 +29,29 @@ const choice = {
 
 function App() {
   // 아이템 선택
-  const [userSelect,setUserSelect] = useState(null)
-  const [computerSelect,setComputerSelect] = useState(null)
-  const [result,setResult] = useState("")
+  const [userSelect,setUserSelect] = useState(null);
+  const [computerSelect,setComputerSelect] = useState(null);
+  const [result,setResult] = useState("");
+  const [winCount, setWinCount] = useState(0);
+  const [loseCount, setLoseCount] = useState(0);
 
-  // 유저 아이템 선택 
   const play = (userChoice) => {
     // 사용자, 컴퓨터 선택 기능 구현
-    setUserSelect(choice[userChoice]); 
-    // console.log("선택됨.",userChoice;);
-    const computerChoice = randomChoice()
+    const userSelection = choice[userChoice];
+    setUserSelect(userSelection);
+
+    const computerChoice = randomChoice();
     setComputerSelect(computerChoice);
-    // judgement(choice[userChoice], computerChoice)
-    setResult(judgement(choice[userChoice], computerChoice));
-  }
+
+    const gameResult = judgement(userSelection, computerChoice);
+    setResult(gameResult);
+
+    if (gameResult === "Win") {
+        setWinCount(winCount + 1);
+    } else if (gameResult === "Lose") {
+        setLoseCount(loseCount + 1);
+    }
+  };
 
   // 사용자 승리 판별
   const judgement = (user, computer) => {
@@ -66,6 +75,14 @@ function App() {
       return computer.name === "Rock" ? "Win" : "Lose";
   };
 
+  const resetGame = () => {
+    setWinCount(0);
+    setLoseCount(0);
+    setUserSelect(null);
+    setComputerSelect(null);
+    setResult("");
+  };
+
   // 컴퓨터 아이템 선택 
   const randomChoice = () => {
     const itemArray = Object.keys(choice);//객체에 키값만 뽑아서 어레이로 만들어주는 함수
@@ -80,7 +97,12 @@ function App() {
   return (
     <div className='container'>
       <h1 className='main'>가위 바위 보 게임</h1>
-      <div className='main'>
+      <div className="scoreboard">
+        <div>
+          {winCount} : {loseCount}
+        </div>
+      </div>
+      <div className='main main-item'>
         <Box title = "You" item={userSelect} result={result}/>
         <Box title = "Computer" item={computerSelect} result={result}/>
       </div>
@@ -89,6 +111,9 @@ function App() {
         <button onClick={() => play("scissors")}><FontAwesomeIcon icon={faHandScissors} className="icon"/></button>
         <button onClick={() => play("paper")}><FontAwesomeIcon icon={faHand} className="icon"/></button>
       </div>
+      <button className="resetBtn" onClick={resetGame}>
+        Reset
+      </button>
     </div>
   );
 }
